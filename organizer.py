@@ -5,12 +5,12 @@ import shutil
 current_dir = os.path.dirname(os.path.realpath(__file__))
 
 # Şu anki dosya yolunda cleaner dosyasını bul. Aslında cleaner uygun değil ama olsun
-cleaner_dir = os.path.join(current_dir, "cleaner")
+cleaner_dir = os.path.join(current_dir, "organizer")
 
 # Eğer 'cleaner' klasörü yoksa hata vermesin, oluştursun
 if not os.path.exists(cleaner_dir):
     os.makedirs(cleaner_dir)
-    print("Cleaner klasörü oluşturuldu. Lütfen içine düzenlenecek dosyaları atın.")
+    print("Organizer klasörü oluşturuldu. Lütfen içine düzenlenecek dosyaları atın.")
     exit()
 
 
